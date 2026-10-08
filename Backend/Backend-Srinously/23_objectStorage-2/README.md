@@ -184,9 +184,7 @@ Because Object Storage is built on pure HTTP, it natively supports range request
 
 **CLI Byte-Level Demo:** You can test this interaction locally using `curl`. Running `curl -r 0-99` requests the first 100 bytes of an object and returns a `206 Partial Content` status. More powerfully, if you ask for just the first **eight bytes**and pipe that binary response to a hex dump tool like **XXT (likely xxd)**, the output instantly reveals a PNG file header. You have successfully identified the file type programmatically across the internet without downloading a single megabyte of the actual image.
 
-Was this visual helpful?
-
-YesNo
+![alt text](image.png)
 
 ## 11. Segmented Video Streaming (HLS/DASH)
 
